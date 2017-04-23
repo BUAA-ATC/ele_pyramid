@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6FA05EE1EAB764600832B83 /* GDAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FA05ED1EAB764600832B83 /* GDAL.framework */; };
+		A6FAFEDB1EAB729500832B83 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FAFEDA1EAB729500832B83 /* main.cpp */; };
+		A6FAFEE31EAB72B500832B83 /* ElevationPyramid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FAFEE11EAB72B500832B83 /* ElevationPyramid.cpp */; };
+		A6FAFEF21EAB72EC00832B83 /* KompexSQLiteBlob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FAFEED1EAB72EC00832B83 /* KompexSQLiteBlob.cpp */; };
+		A6FAFEF31EAB72EC00832B83 /* KompexSQLiteDatabase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FAFEEE1EAB72EC00832B83 /* KompexSQLiteDatabase.cpp */; };
+		A6FAFEF41EAB72EC00832B83 /* KompexSQLiteStatement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6FAFEEF1EAB72EC00832B83 /* KompexSQLiteStatement.cpp */; };
+		A6FAFEF61EAB72EC00832B83 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = A6FAFEF11EAB72EC00832B83 /* sqlite3.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A6FAFED51EAB729500832B83 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A6FA05ED1EAB764600832B83 /* GDAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GDAL.framework; path = "../../../Lab/WhirlyGlobe-2.2_beta3/WhirlyGlobeSrc/elev_tile_pyramid/elev_tile_pyramid/GDAL.framework"; sourceTree = "<group>"; };
+		A6FAFED71EAB729500832B83 /* elev_tile_pyramid */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = elev_tile_pyramid; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FAFEDA1EAB729500832B83 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A6FAFEE11EAB72B500832B83 /* ElevationPyramid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ElevationPyramid.cpp; sourceTree = "<group>"; };
+		A6FAFEE21EAB72B500832B83 /* ElevationPyramid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElevationPyramid.h; sourceTree = "<group>"; };
+		A6FAFEE51EAB72E600832B83 /* KompexSQLiteBlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KompexSQLiteBlob.h; path = include/KompexSQLiteBlob.h; sourceTree = "<group>"; };
+		A6FAFEE61EAB72E600832B83 /* KompexSQLiteDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KompexSQLiteDatabase.h; path = include/KompexSQLiteDatabase.h; sourceTree = "<group>"; };
+		A6FAFEE71EAB72E600832B83 /* KompexSQLiteException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KompexSQLiteException.h; path = include/KompexSQLiteException.h; sourceTree = "<group>"; };
+		A6FAFEE81EAB72E600832B83 /* KompexSQLitePrerequisites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KompexSQLitePrerequisites.h; path = include/KompexSQLitePrerequisites.h; sourceTree = "<group>"; };
+		A6FAFEE91EAB72E600832B83 /* KompexSQLiteStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KompexSQLiteStatement.h; path = include/KompexSQLiteStatement.h; sourceTree = "<group>"; };
+		A6FAFEEA1EAB72E600832B83 /* KompexSQLiteStreamRedirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KompexSQLiteStreamRedirection.h; path = include/KompexSQLiteStreamRedirection.h; sourceTree = "<group>"; };
+		A6FAFEEB1EAB72E600832B83 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqlite3.h; path = include/sqlite3.h; sourceTree = "<group>"; };
+		A6FAFEEC1EAB72E600832B83 /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqlite3ext.h; path = include/sqlite3ext.h; sourceTree = "<group>"; };
+		A6FAFEED1EAB72EC00832B83 /* KompexSQLiteBlob.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KompexSQLiteBlob.cpp; path = src/KompexSQLiteBlob.cpp; sourceTree = "<group>"; };
+		A6FAFEEE1EAB72EC00832B83 /* KompexSQLiteDatabase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KompexSQLiteDatabase.cpp; path = src/KompexSQLiteDatabase.cpp; sourceTree = "<group>"; };
+		A6FAFEEF1EAB72EC00832B83 /* KompexSQLiteStatement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KompexSQLiteStatement.cpp; path = src/KompexSQLiteStatement.cpp; sourceTree = "<group>"; };
+		A6FAFEF11EAB72EC00832B83 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sqlite3.c; path = src/sqlite3.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6FAFED41EAB729500832B83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FA05EE1EAB764600832B83 /* GDAL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6FA05EC1EAB764500832B83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6FA05ED1EAB764600832B83 /* GDAL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6FAFECE1EAB729500832B83 = {
+			isa = PBXGroup;
+			children = (
+				A6FAFED91EAB729500832B83 /* elev_tile_pyramid */,
+				A6FAFED81EAB729500832B83 /* Products */,
+				A6FA05EC1EAB764500832B83 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A6FAFED81EAB729500832B83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6FAFED71EAB729500832B83 /* elev_tile_pyramid */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6FAFED91EAB729500832B83 /* elev_tile_pyramid */ = {
+			isa = PBXGroup;
+			children = (
+				A6FAFEE41EAB72C200832B83 /* Kompex SQLite */,
+				A6FAFEE11EAB72B500832B83 /* ElevationPyramid.cpp */,
+				A6FAFEE21EAB72B500832B83 /* ElevationPyramid.h */,
+				A6FAFEDA1EAB729500832B83 /* main.cpp */,
+			);
+			path = elev_tile_pyramid;
+			sourceTree = "<group>";
+		};
+		A6FAFEE41EAB72C200832B83 /* Kompex SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				A6FAFEED1EAB72EC00832B83 /* KompexSQLiteBlob.cpp */,
+				A6FAFEEE1EAB72EC00832B83 /* KompexSQLiteDatabase.cpp */,
+				A6FAFEEF1EAB72EC00832B83 /* KompexSQLiteStatement.cpp */,
+				A6FAFEF11EAB72EC00832B83 /* sqlite3.c */,
+				A6FAFEE51EAB72E600832B83 /* KompexSQLiteBlob.h */,
+				A6FAFEE61EAB72E600832B83 /* KompexSQLiteDatabase.h */,
+				A6FAFEE71EAB72E600832B83 /* KompexSQLiteException.h */,
+				A6FAFEE81EAB72E600832B83 /* KompexSQLitePrerequisites.h */,
+				A6FAFEE91EAB72E600832B83 /* KompexSQLiteStatement.h */,
+				A6FAFEEA1EAB72E600832B83 /* KompexSQLiteStreamRedirection.h */,
+				A6FAFEEB1EAB72E600832B83 /* sqlite3.h */,
+				A6FAFEEC1EAB72E600832B83 /* sqlite3ext.h */,
+			);
+			name = "Kompex SQLite";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6FAFED61EAB729500832B83 /* elev_tile_pyramid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FAFEDE1EAB729500832B83 /* Build configuration list for PBXNativeTarget "elev_tile_pyramid" */;
+			buildPhases = (
+				A6FAFED31EAB729500832B83 /* Sources */,
+				A6FAFED41EAB729500832B83 /* Frameworks */,
+				A6FAFED51EAB729500832B83 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = elev_tile_pyramid;
+			productName = elev_tile_pyramid;
+			productReference = A6FAFED71EAB729500832B83 /* elev_tile_pyramid */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6FAFECF1EAB729500832B83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Sunhy;
+				TargetAttributes = {
+					A6FAFED61EAB729500832B83 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = E7A7QY4LZ2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A6FAFED21EAB729500832B83 /* Build configuration list for PBXProject "elev_tile_pyramid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A6FAFECE1EAB729500832B83;
+			productRefGroup = A6FAFED81EAB729500832B83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6FAFED61EAB729500832B83 /* elev_tile_pyramid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6FAFED31EAB729500832B83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FAFEF31EAB72EC00832B83 /* KompexSQLiteDatabase.cpp in Sources */,
+				A6FAFEE31EAB72B500832B83 /* ElevationPyramid.cpp in Sources */,
+				A6FAFEDB1EAB729500832B83 /* main.cpp in Sources */,
+				A6FAFEF21EAB72EC00832B83 /* KompexSQLiteBlob.cpp in Sources */,
+				A6FAFEF61EAB72EC00832B83 /* sqlite3.c in Sources */,
+				A6FAFEF41EAB72EC00832B83 /* KompexSQLiteStatement.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A6FAFEDC1EAB729500832B83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A6FAFEDD1EAB729500832B83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A6FAFEDF1EAB729500832B83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = E7A7QY4LZ2;
+				FRAMEWORK_SEARCH_PATHS = "/Users/xlluo/Lab/WhirlyGlobe-2.2_beta3/WhirlyGlobeSrc/elev_tile_pyramid/elev_tile_pyramid/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A6FAFEE01EAB729500832B83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = E7A7QY4LZ2;
+				FRAMEWORK_SEARCH_PATHS = "/Users/xlluo/Lab/WhirlyGlobe-2.2_beta3/WhirlyGlobeSrc/elev_tile_pyramid/elev_tile_pyramid/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6FAFED21EAB729500832B83 /* Build configuration list for PBXProject "elev_tile_pyramid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FAFEDC1EAB729500832B83 /* Debug */,
+				A6FAFEDD1EAB729500832B83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FAFEDE1EAB729500832B83 /* Build configuration list for PBXNativeTarget "elev_tile_pyramid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FAFEDF1EAB729500832B83 /* Debug */,
+				A6FAFEE01EAB729500832B83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6FAFECF1EAB729500832B83 /* Project object */;
+}
