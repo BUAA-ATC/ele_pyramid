@@ -131,6 +131,21 @@ bool ElevationPyramid::addElevationTile(void *tileData,int x,int y,int level)
         quadIndex += (1<<iq)*(1<<iq);
     quadIndex += y*(1<<level) + x;
     
+    if (!queryStmt)
+    {
+        queryStmt = new SQLiteStatement(db);
+    }
+    queryStmt->Sql("SELECT * FROM elevationtiles WHERE quadindex = @quadinex;");
+    queryStmt->BindInt(1, quadIndex);
+    if(queryStmt->FetchRow())
+    {
+        queryStmt->FreeQuery();
+        return true;
+    }
+    // do not forget to clean-up
+    queryStmt->FreeQuery();
+    
+    
     if (!insertStmt)
     {
         insertStmt = new SQLiteStatement(db);
@@ -148,6 +163,9 @@ bool ElevationPyramid::addElevationTile(void *tileData,int x,int y,int level)
             int compressSize=0;
             if (CompressData((void *)tileData, dataSize, &compressOut, compressSize))
             {
+                //QuadIndex is key, maybe exit so check it
+                
+                
                 // Now insert the samples into the database as a blob
                 try {
                     insertStmt->BindBlob(1, compressOut, compressSize);
